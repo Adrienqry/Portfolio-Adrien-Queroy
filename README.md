@@ -17,7 +17,9 @@ Puis ouvrir `http://localhost:8000`.
 1. Creer un depot GitHub avec ces fichiers.
 2. Connecter le depot a Netlify.
 3. Laisser le dossier de publication sur `.`.
-4. Deployer.
+4. Renommer le site dans Netlify si tu veux une URL plus simple, par exemple `portfolio-adrien-queroy`.
+5. Si un ancien asset reste affiche, lancer `Clear cache and deploy site`.
+6. Deployer.
 
 ## Personnalisation rapide
 
