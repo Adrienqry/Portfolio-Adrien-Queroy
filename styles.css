@@ -399,6 +399,29 @@ a {
   text-transform: uppercase;
 }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.3rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.project-links a:hover {
+  border-color: rgba(83, 197, 185, 0.5);
+  color: var(--accent);
+}
+
 .split-section {
   grid-template-columns: 1.1fr 0.9fr;
   align-items: start;
@@ -419,6 +442,11 @@ a {
   gap: 0.8rem;
   justify-items: start;
   font-size: 1rem;
+}
+
+.simple-list a {
+  text-decoration: underline;
+  text-underline-offset: 0.18rem;
 }
 
 .site-footer {
