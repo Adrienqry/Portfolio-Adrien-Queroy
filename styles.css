@@ -197,10 +197,12 @@ a {
 .hero-card {
   padding: 1.5rem;
   border-radius: 1.8rem;
+  display: grid;
+  justify-items: center;
 }
 
 .portrait-wrap {
-  width: min(100%, 16rem);
+  width: min(100%, 19rem);
   margin: 0 auto 1.25rem;
   padding: 0.45rem;
   border-radius: 1.5rem;
@@ -210,9 +212,9 @@ a {
 .portrait {
   display: block;
   width: 100%;
-  aspect-ratio: 1 / 1.15;
+  aspect-ratio: 4 / 4.8;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 14%;
   border-radius: 1.1rem;
   background: #13233c;
 }
@@ -235,6 +237,7 @@ a {
   margin: 1.4rem 0 0;
   display: grid;
   gap: 1rem;
+  width: 100%;
 }
 
 .hero-facts li {
