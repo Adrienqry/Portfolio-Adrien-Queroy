@@ -198,25 +198,56 @@ a {
   padding: 1.5rem;
   border-radius: 1.8rem;
   display: grid;
-  justify-items: center;
+  justify-items: start;
+  align-content: end;
+  gap: 1rem;
 }
 
-.portrait-wrap {
-  width: min(100%, 19rem);
-  margin: 0 auto 1.25rem;
-  padding: 0.45rem;
-  border-radius: 1.5rem;
-  background: linear-gradient(135deg, rgba(83, 197, 185, 0.3), rgba(122, 184, 255, 0.08));
+.hero-card-text {
+  background:
+    linear-gradient(180deg, rgba(13, 24, 43, 0.94), rgba(8, 15, 27, 0.92)),
+    radial-gradient(circle at top right, rgba(83, 197, 185, 0.14), transparent 42%);
 }
 
-.portrait {
-  display: block;
-  width: 100%;
-  aspect-ratio: 4 / 4.8;
-  object-fit: cover;
-  object-position: center 14%;
-  border-radius: 1.1rem;
-  background: #13233c;
+.hero-card-eyebrow {
+  margin: 0;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.hero-card-title {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 1.02;
+  max-width: 10ch;
+}
+
+.hero-card-copy {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.hero-highlight-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.hero-highlight-list span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.2rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(122, 184, 255, 0.09);
+  border: 1px solid rgba(122, 184, 255, 0.16);
+  color: #d7e8ff;
+  font-size: 0.9rem;
 }
 
 .status-pill {
